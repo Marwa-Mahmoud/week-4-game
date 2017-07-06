@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+<body>
+	<div class="container">
+
+		<div class="row">
+			<div id="title" class="col-md-4">
+				Crystal Collector
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="info" class="col-md-6">
+			<p>You will be given a random number at the start of the game.</p>
+			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your toal score</p>
+			<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+			<p>The value of each crystal is hidden from you intil you click on it.</p>
+			<p>Each time when the game starts, the game will change the values of each crystal.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="random-number" class="col-md-3">
+				19	
+			</div>
+			<div id="scores" class="col-md-1">
+				<p></p>
+				<p>Wins:</p>
+				<p>Losses:</p>	
+			</div>
+		</div>
+
+		<!--<div class="row">
+			
+				<img id="crystal1" src="assets/images/red-crystal.jpg" class="img-responsive col-md-2 crystal-image">
+			
+			
+				<img id="crystal2" src="assets/images/blue-crystal.jpg" class="img-responsive col-md-2 crystal-image">
+			
+				<img id="crystal3" src="assets/images/yellow-crystal.jpg" class="img-responsive col-md-2 crystal-image">
+			
+			
+				<img id="crystal4" src="assets/images/green-crystal.png" class="img-responsive col-md-2 crystal-image">
+			
+
+		</div>-->
+		<div id="buttons" class="btn-group" role="group" aria-label="...">
+  			<button id="button1" data-number="" type="button" class="btn btn-default">
+  				<!--<img id="crystal1" src="assets/images/red-crystal.jpg" class="img-responsive">-->
+  			</button>
+  			<button id="button2" data-number="" type="button" class="btn btn-default">
+  				<!--<img id="crystal2" src="assets/images/blue-crystal.jpg" class="img-responsive">-->
+  			</button>
+  			<button id="button3" data-number="" type="button" class="btn btn-default">
+  				<!--<img id="crystal3" src="assets/images/yellow-crystal.jpg" class="img-responsive crystal-image">-->
+  			</button>
+  			<button id="button4" data-number="" type="button" class="btn btn-default">
+  				<!--<img id="crystal4" src="assets/images/green-crystal.png" class="img-responsive  crystal-image">-->
+  			</button>
+
+		</div>
+
+		<div class="row">
+			<div>
+				Your total score is:
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="total-score">
+				0
+			</div>
+			
+		</div>
+		
+
+		
+	</div>
+
+
+</body>
+</html>

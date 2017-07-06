@@ -1,0 +1,52 @@
+
+*{
+	margin: 5px;
+}
+
+body{
+	background-color: #AFEEEE;
+}
+
+#title{
+
+	background-color: #D2691E;
+	height: 100px;
+	color: white;
+	text-align: center;
+
+
+}
+
+#info{
+
+	background-color: #FFEFD5;
+	color: green;
+}
+
+#random-number{
+	
+	background-color: #3CB371;
+}
+
+#scores{
+
+	background-color: #00FFFF;
+}
+
+
+.crystal-image {
+
+	width: 150px;
+	height: 100px;
+	
+
+	
+}
+
+button{
+
+	width: 150px;
+	height: 100px;
+	margin-right: 5px;
+}
+
