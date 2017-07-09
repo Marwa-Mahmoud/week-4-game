@@ -1,6 +1,7 @@
-
 *{
-	margin: 5px;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 5px;
 }
 
 body{
@@ -13,6 +14,8 @@ body{
 	height: 100px;
 	color: white;
 	text-align: center;
+	font-size: 34px;
+	padding-top: 20px;
 
 
 }
@@ -21,32 +24,64 @@ body{
 
 	background-color: #FFEFD5;
 	color: green;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #random-number{
 	
 	background-color: #3CB371;
+	height: 100px;
+	padding-top: 5px;
+	font-size: 32px;
+	font-weight: 10px;
 }
 
 #scores{
 
 	background-color: #00FFFF;
+	height: 100px;
+	padding-top: 5px;
+	margin-left: 10px;
+}
+
+#score-text, #total-score{
+	background-color: #008B8B;
+	color: white;
+}
+
+#total-score{
+	height: 100px;
+	padding-top: 5px;
+	font-size: 32px;
+	font-weight: 10px;
+}
+#crystal-text{
+	background-color: white;
+	color: #008B8B;
+	margin-left: 10px;
+}
+#crystal-number{
+
+	height: 100px;
+	padding-top: 5px;
+	font-size: 32px;
+	font-weight: 10px;
+	background-color: white;
+	color: #008B8B;
+	margin-left: 10px;
 }
 
 
 .crystal-image {
 
-	width: 150px;
-	height: 100px;
+	padding: 0px;
+	margin: 5px;
+
+	
 	
 
 	
 }
 
-button{
-
-	width: 150px;
-	height: 100px;
-	margin-right: 5px;
-}
 

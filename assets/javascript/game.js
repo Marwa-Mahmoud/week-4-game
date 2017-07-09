@@ -50,10 +50,10 @@ $(document).ready(function() {
 
 		//function to assign each of the four crystals a unique number
 		var assignCrystalsNumbers = function(arr){
-			$("#button1").attr("data-number", arr[0]);
-			$("#button2").attr("data-number", arr[1]);
-			$("#button3").attr("data-number", arr[2]);
-			$("#button4").attr("data-number", arr[3]);
+			$("#crystal1").attr("data-number", arr[0]);
+			$("#crystal2").attr("data-number", arr[1]);
+			$("#crystal3").attr("data-number", arr[2]);
+			$("#crystal4").attr("data-number", arr[3]);
 		}
 
 		crystalsNumbers = generateCrystalsNumbers();
@@ -68,40 +68,49 @@ $(document).ready(function() {
 	//function to check the total score and see if win or lose
 	var checkResult = function(){
 		if(totalScore === randomNumber){
-			alert("You Win!");
+			//alert("You Win!");
 			wins++;
+			$("#result").text("You Win!");
+			$("#wins").text("Wins: "+wins);
 			console.log(wins + "  "+ losses);
 			restartRound();
 
 		}
 		else if(totalScore > randomNumber){
-			alert("You Lose!");
+			//alert("You Lose!");
 			losses++;
+			$("#result").text("You lose!");
+			$("#losses").text("Losses: "+losses);
 			console.log(wins + "  "+ losses);
 			restartRound();
 		}
 
 	}
 
-	$("#button1").on("click", function(){
+	$("#crystal1").on("click", function(){
+		$("#crystal-number").text($(this).attr("data-number"));
+		totalScore += parseInt($(this).attr("data-number"));
+		console.log(totalScore);
+		$("#total-score").text(totalScore);
+		checkResult();
+	});
+
+	$("#crystal2").on("click", function(){
+		$("#crystal-number").text($(this).attr("data-number"));
 		totalScore += parseInt($(this).attr("data-number"));
 		$("#total-score").text(totalScore);
 		checkResult();
 	});
 
-	$("#button2").on("click", function(){
+	$("#crystal3").on("click", function(){
+		$("#crystal-number").text($(this).attr("data-number"));
 		totalScore += parseInt($(this).attr("data-number"));
 		$("#total-score").text(totalScore);
 		checkResult();
 	});
 
-	$("#button3").on("click", function(){
-		totalScore += parseInt($(this).attr("data-number"));
-		$("#total-score").text(totalScore);
-		checkResult();
-	});
-
-	$("#button4").on("click", function(){
+	$("#crystal4").on("click", function(){
+		$("#crystal-number").text($(this).attr("data-number"));
 		totalScore += parseInt($(this).attr("data-number"));
 		$("#total-score").text(totalScore);
 		checkResult();

@@ -13,13 +13,13 @@
 	<div class="container">
 
 		<div class="row">
-			<div id="title" class="col-md-4">
-				Crystal Collector
+			<div id="title" class="col-sm-3">
+				Crystal Collector!
 			</div>
 		</div>
 
 		<div class="row">
-			<div id="info" class="col-md-6">
+			<div id="info" class="col-sm-4">
 			<p>You will be given a random number at the start of the game.</p>
 			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your toal score</p>
 			<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
@@ -29,55 +29,64 @@
 		</div>
 
 		<div class="row">
-			<div id="random-number" class="col-md-3">
+			<div id="random-number" class="col-sm-2">
 				19	
 			</div>
-			<div id="scores" class="col-md-1">
-				<p></p>
-				<p>Wins:</p>
-				<p>Losses:</p>	
+			<div id="scores" class="col-sm-1">
+				<p id="result"></p>
+				<p id="wins">Wins: 0</p>
+				<p id="losses">Losses: 0</p>	
 			</div>
 		</div>
 
-		<!--<div class="row">
+		<div class="row">
 			
-				<img id="crystal1" src="assets/images/red-crystal.jpg" class="img-responsive col-md-2 crystal-image">
-			
-			
-				<img id="crystal2" src="assets/images/blue-crystal.jpg" class="img-responsive col-md-2 crystal-image">
-			
-				<img id="crystal3" src="assets/images/yellow-crystal.jpg" class="img-responsive col-md-2 crystal-image">
+				<img id="crystal1" data-number="" src="assets/images/red-crystal.png" class="img-responsive col-sm-1 crystal-image">
 			
 			
-				<img id="crystal4" src="assets/images/green-crystal.png" class="img-responsive col-md-2 crystal-image">
+				<img id="crystal2" data-number="" src="assets/images/blue-crystal.png" class="img-responsive col-sm-1 crystal-image">
+			
+				<img id="crystal3" data-number="" src="assets/images/purple-crystal.png" class="img-responsive col-sm-1 crystal-image">
+			
+			
+				<img id="crystal4" data-number="" src="assets/images/green-crystal.png" class="img-responsive col-sm-1 crystal-image">
 			
 
-		</div>-->
+		</div>
+		
+		<!--
 		<div id="buttons" class="btn-group" role="group" aria-label="...">
   			<button id="button1" data-number="" type="button" class="btn btn-default">
-  				<!--<img id="crystal1" src="assets/images/red-crystal.jpg" class="img-responsive">-->
+  				<img id="crystal1" src="assets/images/red-crystal.jpg" class="img-responsive">
   			</button>
   			<button id="button2" data-number="" type="button" class="btn btn-default">
-  				<!--<img id="crystal2" src="assets/images/blue-crystal.jpg" class="img-responsive">-->
+  				<img id="crystal2" src="assets/images/blue-crystal.jpg" class="img-responsive">
   			</button>
   			<button id="button3" data-number="" type="button" class="btn btn-default">
-  				<!--<img id="crystal3" src="assets/images/yellow-crystal.jpg" class="img-responsive crystal-image">-->
+  				<img id="crystal3" src="assets/images/yellow-crystal.jpg" class="img-responsive crystal-image">
   			</button>
   			<button id="button4" data-number="" type="button" class="btn btn-default">
-  				<!--<img id="crystal4" src="assets/images/green-crystal.png" class="img-responsive  crystal-image">-->
+  				<img id="crystal4" src="assets/images/green-crystal.png" class="img-responsive  crystal-image">
   			</button>
 
 		</div>
+		-->
 
 		<div class="row">
-			<div>
+			<div id="score-text" class="col-sm-2">
 				Your total score is:
+			</div>
+			<div id="crystal-text" class="col-sm-2">
+				Current Crystal Number:
 			</div>
 		</div>
 
 		<div class="row">
-			<div id="total-score">
+			<div id="total-score" class="col-sm-2">
 				0
+			</div>
+			<div id="crystal-number" class="col col-sm-2 ">
+				
 			</div>
 			
 		</div>
