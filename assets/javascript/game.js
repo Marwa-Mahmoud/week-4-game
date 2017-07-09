@@ -26,6 +26,7 @@ $(document).ready(function() {
 
 		$("#random-number").text(randomNumber);
 		$("#total-score").text(totalScore);
+		$("#crystal-number").text("");
 
  
  		//function to create four unique random numbers
